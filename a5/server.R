@@ -15,7 +15,7 @@ data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/a5-Dav1dCzy/
 
 # co2, cement_co2, country
 # What is the percentage of cement_co2 in total co2 emission across all the counties?
-world_map <- map_data("world")
+world_map <- map_data('world')
 co2_2020 <- data %>%
   mutate(percentage = cement_co2 / co2) %>%
   select(country, co2, cement_co2, percentage)
