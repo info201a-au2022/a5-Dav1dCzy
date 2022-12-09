@@ -21,7 +21,7 @@ shinyUI(fluidPage(
           sliderInput("year",
                       "Year:",
                       min = min(map_percentage$year),
-                      max = map_percentage$year,
+                      max = max(map_percentage$year),
                       value = min(map_percentage$year)),
 
         # Show a plot of the generated distribution

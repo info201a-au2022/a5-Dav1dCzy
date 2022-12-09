@@ -21,8 +21,6 @@ co2_2020 <- data %>%
 names(co2_2020)[1] <- paste("region")
 map_percentage <- left_join(co2_2020, world_map, by = "region")
 
-
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   
   filter_range <- reactive({
