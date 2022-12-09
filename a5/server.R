@@ -28,13 +28,12 @@ shinyServer(function(input, output) {
       inputId = "year",
       min = min(map_percentage$year),
       max = max(map_percentage$year),
-      value = min(map_percentage$year)
     )
   })
   
   filter_range <- reactive({
     map_percentage %>%
-      filter(year = input$year)
+      filter(year == input$year)
   })
 
   output$distPlot <- renderPlotly({
