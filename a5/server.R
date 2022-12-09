@@ -25,7 +25,7 @@ shinyServer(function(input, output) {
   map_percentage <- left_join(co2_2020, world_map, by = "region")
   
   filter_range <- reactive({
-    co2_2020 %>%
+    map_percentage %>%
       filter(year = input$year)
   })
 
