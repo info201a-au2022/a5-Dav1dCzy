@@ -26,7 +26,7 @@ ui <- shinyUI(fluidPage(
     page_one <- tabPanel(
       "Graph",
       titlePanel("Percentage of Cement CO2 Emission in Total CO2 Emission"),
-      siderbarLayout(
+      sidebarLayout(
         sliderInput("year",
                     "Year", 
                     min = min(map_percentage$year),
