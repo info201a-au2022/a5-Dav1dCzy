@@ -9,6 +9,8 @@
 
 library(shiny)
 library(dplyr)
+library(plotly)
+library(ggplot2)
 data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/a5-Dav1dCzy/main/owid-co2-data.csv")
 
 # co2, cement_co2, country
