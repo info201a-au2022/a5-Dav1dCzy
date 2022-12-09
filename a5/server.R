@@ -10,6 +10,7 @@
 library(shiny)
 library(dplyr)
 library(plotly)
+install.packages(ggplot2)
 library(ggplot2)
 data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/a5-Dav1dCzy/main/owid-co2-data.csv")
 
