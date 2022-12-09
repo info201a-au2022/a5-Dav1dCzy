@@ -40,7 +40,7 @@ ui <- shinyUI(fluidPage(
           p("From the chart, it shows that as the there is little data about CO2 emission before 19 Centuries. Starting from 1950, most countries around the world has CO2 emission from cement. Over time, a higher percentage of total cement CO2 emissions in developing countries.")
         )
       )
-    )
+    ),
     # Application title
     titlePanel("CO2 Emissions from Cement per Country per Year as a Percentage of Total CO2 Emissions"),
 
