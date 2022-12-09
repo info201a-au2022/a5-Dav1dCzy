@@ -23,6 +23,15 @@ map_percentage <- left_join(co2_2020, world_map, by = "region")
 
 shinyServer(function(input, output) {
   
+  observeEvent(map_percentage, {
+    updateSliderInput(
+      inputId = "year",
+      min = min(map_percentage$year),
+      max = max(map_percentage$year),
+      value = min(map_percentage$year)
+    )
+  })
+  
   filter_range <- reactive({
     map_percentage %>%
       filter(year = input$year)
