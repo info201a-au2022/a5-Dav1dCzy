@@ -13,21 +13,19 @@ library(shiny)
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("CO2 Emissions from Cement per Country per Year as a Percentage of Total CO2 Emissions"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
+          sliderInput("year",
+                      "Year:",
+                      min = min(map_percentage$year),
+                      max = map_percentage$year,
+                      value = min(map_percentage$year)),
 
         # Show a plot of the generated distribution
         mainPanel(
-            plotOutput("distPlot")
+            plotlyOutput("distPlot")
         )
     )
 ))
