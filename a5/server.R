@@ -41,6 +41,6 @@ shinyServer(function(input, output) {
   output$distPlot <- renderPlotly({
     plot <- ggplotly(ggplot(filter_range(), aes(long, lat, group = group)) + 
                        geom_polygon(aes(fill = percentage)) +
-                       scale_fill_gradient(low = "blue", high = "purple", na.value = NA))
+                       scale_fill_gradient(low = "white", high = "black", na.value = NA))
     })
 })
