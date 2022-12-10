@@ -7,7 +7,11 @@
 #    http://shiny.rstudio.com/
 #
 
+library(maps)
 library(shiny)
+library(dplyr)
+library(plotly)
+library(ggplot2)
 source("https://raw.githubusercontent.com/info201a-au2022/a5-Dav1dCzy/main/a5/server.R")
 
 intro_page <- tabPanel(
