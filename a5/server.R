@@ -21,7 +21,7 @@ co2_2020 <- data %>%
   select(country, year, co2, cement_co2, percentage)
 
 #names(co2_2020)[1] <- paste("region")
-rename(co2_2020, region = country)
+rename(co2_2020, country = region)
 map_percentage <- left_join(co2_2020, world_map, by = "region")
 
 shinyServer(function(input, output) {
