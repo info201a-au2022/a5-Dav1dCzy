@@ -5,9 +5,9 @@ account: kecgmn-dav1dczy
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7855022
-bundleId: 6618997
+bundleId: 6619096
 url: https://kecgmn-dav1dczy.shinyapps.io/a5555/
-when: 1670651353.32745
-lastSyncTime: 1670651353.32746
+when: 1670652785.14082
+lastSyncTime: 1670652785.14083
 asMultiple: FALSE
 asStatic: FALSE
